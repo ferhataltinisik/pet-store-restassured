@@ -1,0 +1,315 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-20T21:32:15.588Z",
+        "line": 5,
+        "name": "A pet order should be completed successfully by a user",
+        "description": "",
+        "id": "order-tests;a-pet-order-should-be-completed-successfully-by-a-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1987000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the endpoint is up",
+            "match": {
+              "location": "step_definitions.OrderStepDefinitions.the_endpoint_is_up()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 614000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i post an order for a pet by orderId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 37
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.i_post_an_order_for_a_pet_by_order_id(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the status code returns 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.the_status_code_returns(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 596000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "pet order is completed and status set as \"placed\" successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"placed\"",
+                  "offset": 41
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.pet_order_is_completed_and_status_set_as_successfully(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-20T21:32:18.848Z",
+        "line": 18,
+        "name": "Display order details successfully",
+        "description": "",
+        "id": "order-tests;display-order-details-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 584000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the endpoint is up",
+            "match": {
+              "location": "step_definitions.OrderStepDefinitions.the_endpoint_is_up()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 602000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "i try to get order details by orderId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 38
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.iTryToGetOrderDetailsByOrderId(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "order details should be able to displayed for orderId 1 successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 54
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.order_details_should_be_able_to_displayed_for_order_id_successfully(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-20T21:32:20.077Z",
+        "line": 31,
+        "name": "Details should not be displayed for nonexistent order id",
+        "description": "",
+        "id": "order-tests;details-should-not-be-displayed-for-nonexistent-order-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 595000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the endpoint is up",
+            "match": {
+              "location": "step_definitions.OrderStepDefinitions.the_endpoint_is_up()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 579000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "i try to get order details by orderId 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 38
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.iTryToGetOrderDetailsByOrderId(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "error message should be received \"Order not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order not found\"",
+                  "offset": 33
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.errorMessageShouldBeReceived(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-20T21:32:21.281Z",
+        "line": 33,
+        "name": "Delete an order successfully",
+        "description": "",
+        "id": "order-tests;delete-an-order-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the endpoint is up",
+            "match": {
+              "location": "step_definitions.OrderStepDefinitions.the_endpoint_is_up()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 582000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "i try to delete order details by orderId 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 41
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.iTryToDeleteOrderDetailsByOrderId(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c404\u003e.\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\n\tat step_definitions.OrderStepDefinitions.orderShouldBeDeletedSuccessfully(OrderStepDefinitions.java:66)\n\tat ✽.order should be deleted successfully(file:///Users/ferhat/DEVELOPMENT/qA-FrameWorks/Rest-Frameworks/Challenges/Alveo/pet-store-restassured/src/test/resources/features/Order.feature:36)\n",
+              "duration": 14000000,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "order should be deleted successfully",
+            "match": {
+              "location": "step_definitions.OrderStepDefinitions.orderShouldBeDeletedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-20T21:32:22.473Z",
+        "line": 39,
+        "name": "Delete a unavailable order",
+        "description": "",
+        "id": "order-tests;delete-a-unavailable-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 585000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the endpoint is up",
+            "match": {
+              "location": "step_definitions.OrderStepDefinitions.the_endpoint_is_up()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 590000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "i try to delete order details by orderId 500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 41
+                }
+              ],
+              "location": "step_definitions.OrderStepDefinitions.iTryToDeleteOrderDetailsByOrderId(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "verify unavailable order",
+            "match": {
+              "location": "step_definitions.OrderStepDefinitions.verifyUnavailableOrder()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Order Tests",
+    "description": "  This feature includes tests that test the store order RESTFul services",
+    "id": "order-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Order.feature",
+    "tags": []
+  }
+]
