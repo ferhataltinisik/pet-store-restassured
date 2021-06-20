@@ -5,9 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import model.Order;
-import org.junit.Assert;
 import utilities.*;
 
 import static org.hamcrest.Matchers.equalTo;
@@ -16,8 +14,6 @@ import static org.hamcrest.Matchers.equalTo;
 public class OrderStepDefinitions {
     BaseUtils baseUtils;
     OrderUtils orderUtils;
-    Helper helper;
-    private World world;
     Response response = null;
 
 
@@ -62,7 +58,6 @@ public class OrderStepDefinitions {
 
     @Then("order should be deleted successfully")
     public void orderShouldBeDeletedSuccessfully() {
-//        orderUtils.veryOrderDeleted(response, 4);
         response.then().statusCode(200);
     }
 

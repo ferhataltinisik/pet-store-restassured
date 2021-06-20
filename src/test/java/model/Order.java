@@ -2,7 +2,6 @@ package model;
 
 public class Order {
 	
-	
 	private Integer id;
 	private Integer petId;
 	private Integer quantity;
@@ -12,9 +11,9 @@ public class Order {
 
 	
 	public Order() {
-		setId(32);
-		setPetId(3);
-		setQuantity(2);
+		setId(3);
+		setPetId(7);
+		setQuantity(1);
 		setComplete(true);
 		setStatus("placed");
 		setShipDate("2021-06-18T22:02:14.222Z");
