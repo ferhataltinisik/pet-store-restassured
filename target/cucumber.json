@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-20T22:46:34.122Z",
+        "start_timestamp": "2021-06-20T23:25:29.304Z",
         "line": 5,
         "name": "A pet order should be completed successfully by a user",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1836000000,
+              "duration": 2061000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 605000000,
+              "duration": 591000000,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 488000000,
+              "duration": 554000000,
               "status": "passed"
             },
             "line": 9,
@@ -80,7 +80,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-20T22:46:37.111Z",
+        "start_timestamp": "2021-06-20T23:25:32.602Z",
         "line": 18,
         "name": "Display order details successfully",
         "description": "",
@@ -90,7 +90,7 @@
         "steps": [
           {
             "result": {
-              "duration": 573000000,
+              "duration": 559000000,
               "status": "passed"
             },
             "line": 19,
@@ -102,7 +102,7 @@
           },
           {
             "result": {
-              "duration": 584000000,
+              "duration": 572000000,
               "status": "passed"
             },
             "line": 20,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 26000000,
               "status": "passed"
             },
             "line": 21,
@@ -139,7 +139,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-20T22:46:38.297Z",
+        "start_timestamp": "2021-06-20T23:25:33.764Z",
         "line": 31,
         "name": "Details should not be displayed for nonexistent order id",
         "description": "",
@@ -149,7 +149,7 @@
         "steps": [
           {
             "result": {
-              "duration": 565000000,
+              "duration": 567000000,
               "status": "passed"
             },
             "line": 25,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 581000000,
+              "duration": 563000000,
               "status": "passed"
             },
             "line": 26,
@@ -198,7 +198,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-20T22:46:39.458Z",
+        "start_timestamp": "2021-06-20T23:25:34.910Z",
         "line": 33,
         "name": "Delete an order successfully",
         "description": "",
@@ -208,7 +208,7 @@
         "steps": [
           {
             "result": {
-              "duration": 573000000,
+              "duration": 570000000,
               "status": "passed"
             },
             "line": 34,
@@ -220,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 558000000,
+              "duration": 565000000,
               "status": "passed"
             },
             "line": 35,
@@ -239,7 +239,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c404\u003e.\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\n\tat step_definitions.OrderStepDefinitions.orderShouldBeDeletedSuccessfully(OrderStepDefinitions.java:61)\n\tat ✽.order should be deleted successfully(file:///Users/ferhat/DEVELOPMENT/qA-FrameWorks/Rest-Frameworks/Challenges/Alveo/pet-store-restassured/src/test/resources/features/Order.feature:36)\n",
-              "duration": 16000000,
+              "duration": 17000000,
               "status": "failed"
             },
             "line": 36,
@@ -252,7 +252,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-20T22:46:40.614Z",
+        "start_timestamp": "2021-06-20T23:25:36.072Z",
         "line": 39,
         "name": "Delete a unavailable order",
         "description": "",
@@ -262,7 +262,7 @@
         "steps": [
           {
             "result": {
-              "duration": 564000000,
+              "duration": 566000000,
               "status": "passed"
             },
             "line": 40,
@@ -274,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 562000000,
+              "duration": 558000000,
               "status": "passed"
             },
             "line": 41,

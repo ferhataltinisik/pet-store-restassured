@@ -9,7 +9,6 @@ import org.json.JSONObject;
 
 public class BaseUtils {
     public static final int SUCCESS_STATUS_CODE = 200;
-    public static final int BAD_REQUEST_STATUS_CODE = 400;
 
     public static final int POST = 1;
     public static final int GET = 2;

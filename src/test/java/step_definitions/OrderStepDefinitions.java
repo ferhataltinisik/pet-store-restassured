@@ -21,7 +21,7 @@ public class OrderStepDefinitions {
     @Given("the endpoint is up")
     public void the_endpoint_is_up() {
         String url = baseUtils.getBaseUri("swagger.json");
-        RestAssured.when().get(url).then().statusCode(200);
+        RestAssured.when().get(url).then().statusCode(baseUtils.SUCCESS_STATUS_CODE);
     }
 
     @When("i post an order for a pet by orderId {int}")
@@ -58,7 +58,7 @@ public class OrderStepDefinitions {
 
     @Then("order should be deleted successfully")
     public void orderShouldBeDeletedSuccessfully() {
-        response.then().statusCode(200);
+        response.then().statusCode(baseUtils.SUCCESS_STATUS_CODE);
     }
 
     @Then("error message should be received {string}")
